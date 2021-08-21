@@ -1,8 +1,6 @@
-# Getting Started with Create React App
+### An app I made from scratch using React.js as an exercise for "React - The Compnete Guide". 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
 
 In the project directory, you can run:
 
