@@ -1,9 +1,6 @@
 ### An app I made from scratch using React.js as an exercise for "React - The Compnete Guide". 
-
-
-
-In the project directory, you can run:
-
+###
+###
 ### `npm start`
 
 Runs the app in the development mode.\
