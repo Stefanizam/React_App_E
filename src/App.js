@@ -6,7 +6,7 @@ import InputMain from "./components/InputField/InputMain";
 import UsersList from "./components/OutputField/UsersList";
 import ErrorModal from "./components/ErrorModal/ErrorModal"
 
-import "./App.css";
+import styles from "./App.module.css";
 
 function App() {
   const [usersData, setUsersData] = useState([]);
@@ -34,8 +34,9 @@ function App() {
     }
   }
 
+
   return (
-    <div className="App">
+    <div className={styles.App}>
       <Card>
         <InputMain onSubmitData={newUserHandler}></InputMain>
       </Card>
@@ -43,7 +44,7 @@ function App() {
         <UsersList data={usersData}></UsersList>
       </Card>
       {modalIsOpen && <ErrorModal typeOfError={errorMessage} closeModal={closeModalHandler}></ErrorModal>}
-    </div>
+    </div >
   );
 }
 

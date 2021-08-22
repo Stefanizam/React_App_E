@@ -18,7 +18,7 @@ const InputMain = (props) => {
   const onSubmitHandler = (event) => {
     event.preventDefault();
 
-    if (enteredAge < 0) {
+    if (+enteredAge < 1) {
       props.onSubmitData("wrongAgeEntered");
     } else if (!enteredUsername || !enteredAge) {
       props.onSubmitData("noUserEntered");
@@ -38,17 +38,17 @@ const InputMain = (props) => {
 
   return (
     <form className={styles.inputMain} onSubmit={onSubmitHandler}>
-      <label for="username">Username:</label>
+      <label htmlFor="username">Username:</label>
       <input
         className={styles.inputMain__username}
-        label="username"
+        id="username"
         type="text"
         onChange={usernameChangeHandler}
       ></input>
-      <label for="age">Age:</label>
+      <label htmlFor="age">Age:</label>
       <input
         className={styles.inputMain__age}
-        label="age"
+        id="age"
         type="number"
         onChange={ageChangeHandler}
       ></input>
