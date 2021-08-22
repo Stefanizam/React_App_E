@@ -1,0 +1,17 @@
+.userContainer {
+  text-align: left;
+  border: 1px solid rgb(200, 200, 200);
+  border-radius: 5px;
+  margin-bottom: 0.25rem;
+  padding: 0.25rem;
+}
+
+.name {
+  color: rgb(50, 50, 50);
+  font-weight: 200;
+}
+
+.age {
+  font-weight: 200;
+  color: teal;
+}
