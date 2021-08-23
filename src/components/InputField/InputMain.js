@@ -18,13 +18,13 @@ const InputMain = (props) => {
   const onSubmitHandler = (event) => {
     event.preventDefault();
 
-    if (+enteredAge < 1) {
+    if (+enteredAge < 0) {
       props.onSubmitData("wrongAgeEntered");
     } else if (!enteredUsername || !enteredAge) {
       props.onSubmitData("noUserEntered");
     } else {
       const newUser = {
-        key: Math.random(),
+        key: Math.random().toString(),
         username: enteredUsername,
         age: enteredAge,
       };
